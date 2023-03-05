@@ -37,33 +37,37 @@ Oracle 19c with SQL Developer Download and Installation Guide
 
 # Installation 
 
+## Setting Up Orcale 19c
+```
+Important: You Show Have an internet connection to get this DONE!
+```
 - First You Should have this tow Files on your machine, Then Follow the following instructions: 
 
-![image](https://user-images.githubusercontent.com/110406908/222979929-e43d2cdb-b87d-4507-8df9-8fafd7ab0dd6.png)
+    ![image](https://user-images.githubusercontent.com/110406908/222979929-e43d2cdb-b87d-4507-8df9-8fafd7ab0dd6.png)
 
 - Go to your C Drive and creat new folder with name ```app```.
 
-![image](https://user-images.githubusercontent.com/110406908/222979598-f500aeed-1c7e-4735-a4a7-39a27328cc46.png)
+    ![image](https://user-images.githubusercontent.com/110406908/222979598-f500aeed-1c7e-4735-a4a7-39a27328cc46.png)
 
 - Inside ```app``` folderm, Extract the ```WINDOWS.X64_193000_db_home.zip``` file into ```db_home``` folder.
 
-![image](https://user-images.githubusercontent.com/110406908/222979707-cce90b9d-4478-4494-85b9-d7367fa60646.png)
+    ![image](https://user-images.githubusercontent.com/110406908/222979707-cce90b9d-4478-4494-85b9-d7367fa60646.png)
 
 - After extracting is complete, Run the ```Setup.exe```
 
-![image](https://user-images.githubusercontent.com/110406908/222979843-4c977040-9636-461e-8a41-4ee09f062cee.png)
+    ![image](https://user-images.githubusercontent.com/110406908/222979843-4c977040-9636-461e-8a41-4ee09f062cee.png)
 
 - The Setup will start lunching, just wait.
 
-![image](https://user-images.githubusercontent.com/110406908/222980304-47987a4c-60a6-44f4-988f-74d39a9b5ae9.png)
+    ![image](https://user-images.githubusercontent.com/110406908/222980304-47987a4c-60a6-44f4-988f-74d39a9b5ae9.png)
 
 - Now choose the same settings in the ScreenShots below and click next every time..
 
-![image](https://user-images.githubusercontent.com/110406908/222980431-27862bdc-358f-4b6b-a841-06546dc47d41.png)
+    ![image](https://user-images.githubusercontent.com/110406908/222980431-27862bdc-358f-4b6b-a841-06546dc47d41.png)
 
-![image](https://user-images.githubusercontent.com/110406908/222980548-c2262445-5f86-472d-8e29-250fd7dcaf16.png)
+    ![image](https://user-images.githubusercontent.com/110406908/222980548-c2262445-5f86-472d-8e29-250fd7dcaf16.png)
 
-![image](https://user-images.githubusercontent.com/110406908/222980556-b0f296a8-cca1-4fa4-8cd1-dd7321acb007.png)
+    ![image](https://user-images.githubusercontent.com/110406908/222980556-b0f296a8-cca1-4fa4-8cd1-dd7321acb007.png)
 
 - Now The screen below is very important, Check these out: 
     - Oracle Home: ```C:\app```, as Default.
@@ -74,11 +78,44 @@ Oracle 19c with SQL Developer Download and Installation Guide
     - Check on Creat as Container database.
     - Plugguble database name: ```orclpdb```.
     - Now click ```next```.
-![image](https://user-images.githubusercontent.com/110406908/222980656-3cb15b5b-5e8a-448a-ba3d-57150cd3b26e.png)
+
+    ![image](https://user-images.githubusercontent.com/110406908/222980656-3cb15b5b-5e8a-448a-ba3d-57150cd3b26e.png)
 
 ```
 As you see down in Massages Section, it shows that our password is weak, just do not worry.
  ```
+
+- It shows that our password is weak, Don't Care, Click ```Yes```.
+
+    ![image](https://user-images.githubusercontent.com/110406908/222981483-a37aaf54-b53a-41c6-9922-17c66d8e645a.png)
+
+
+- Now Click ```Install```.
+
+    ![image](https://user-images.githubusercontent.com/110406908/222981688-148714b0-5902-41e3-bcfc-a6f9e4bfb84f.png)
+
+
+- If this Window popuped, just click ```Allow access```, and wait until install finishes. 
+
+    ![image](https://user-images.githubusercontent.com/110406908/222981748-588bb582-eaa9-4f57-a52a-cb0043f41106.png)
+
+- Now to test the database is successfully installed or not, just copy the highlighted link and click ```close```.
+
+    ![image](https://user-images.githubusercontent.com/110406908/222982108-a65817a5-be17-447e-947f-9a9652369c68.png)
+    
+- then paste it into the browser and  log in as: 
+    - Username: ```sys```.
+    - Password: the password you created while setup, "in my case ```111```".
+
+    ![image](https://user-images.githubusercontent.com/110406908/222982202-7e467beb-5daa-46ba-ad3c-9bc053f06198.png)
+
+
+- That should shows this Dashboard. 
+    ![image](https://user-images.githubusercontent.com/110406908/222982517-567aa8b0-c80b-47d6-aa26-d00244a2c217.png)
+
+
+## Setting Up SQL Developer
+
 
 # Authors
 
