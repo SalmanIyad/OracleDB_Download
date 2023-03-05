@@ -1,4 +1,4 @@
-# Oracle 19c Download
+# Oracle 19c & SQL Developer Install
 Oracle 19c with SQL Developer Download and Installation Guide
 
 
@@ -165,8 +165,58 @@ Important: You Show Have an internet connection to get this DONE!
 
     ![image](https://user-images.githubusercontent.com/110406908/222984147-205ddf98-7134-44be-9f4b-efdfdecd6c13.png)
 
+- Type ```alter pluggable database orclpdb save state;``` to save the pluggable database state, and hit  ```Enter```.
 
+    ![image](https://user-images.githubusercontent.com/110406908/222985429-f0cab04e-4de7-4cb2-a2ea-fd9f42758e49.png)
     
+#
+
+ - Commands Summary: 
+    ```
+    sqlplus / as sysdba
+    alter session set container = orclpdb;
+    alter user hr identified by hr account unlock;
+    conn hr/hr@orclpdb;
+    alter pluggable database orclpdb save state;
+    ```
+#
+
+
+- Back to the second ```.ZIP``` file.
+
+    ![image](https://user-images.githubusercontent.com/110406908/222985680-068d1c97-0efe-4a78-8b29-3b34e64158d7.png)
+- Extract it into the `app` folder.
+
+    ![image](https://user-images.githubusercontent.com/110406908/222985756-7dfd4407-a631-4e04-8b5c-f1bf09a6be51.png)
+
+- Inside the extracted `sqldeveloper` folder, go down to `sqldeveloper.exe`, right click on it and send it to the desktop "as a shortcut".
+    
+    ![image](https://user-images.githubusercontent.com/110406908/222986008-424cd1fb-dd11-46cc-a0f9-9635ac760b4f.png)
+
+- Run the sqldeveloper from your desktop shortcut.
+
+    ![image](https://user-images.githubusercontent.com/110406908/222986086-d8d5fd64-b1e5-4778-b758-1031490324ae.png)
+
+- From the left up corner click the green `+` sign to ad a connection.
+
+    ![image](https://user-images.githubusercontent.com/110406908/222986156-5c300a87-178b-4f47-8380-d249e4bbf8fb.png)
+
+- In this Window the `Name`, `Username` and `Password` are `hr`, then Check the `Service name` and set it to `orclpdb`.
+    
+    ![Untitled](https://user-images.githubusercontent.com/110406908/222986564-a1647b8f-4b00-4380-983c-23765459c16f.png)
+
+
+- Click `Test` Button and it should be `Status: Success` showed in bottom-left of the window.
+ 
+    ![image](https://user-images.githubusercontent.com/110406908/222986918-a2f7ace4-d81a-4e4f-ab45-f91d4493db29.png)
+
+- Then click `Connect` Button.
+
+    ![image](https://user-images.githubusercontent.com/110406908/222987174-e0406c31-caff-4d31-956a-9597cf6527cd.png)
+
+- Here you can write `SQL Commands` and Run it using the green run Button on the top toolbar.
+
+    ![image](https://user-images.githubusercontent.com/110406908/222987122-89a9a527-0e46-4f43-a493-fdb9dc4ea356.png)
 # Authors
 
 - [@SalmanIyad](https://www.github.com/SalmanIyad)
