@@ -82,7 +82,7 @@ Important: You Show Have an internet connection to get this DONE!
     ![image](https://user-images.githubusercontent.com/110406908/222980656-3cb15b5b-5e8a-448a-ba3d-57150cd3b26e.png)
 
 ```
-As you see down in Massages Section, it shows that our password is weak, just do not worry.
+    As you see down in Massages Section, it shows that our password is weak, just do not worry.
  ```
 
 - It shows that our password is weak, Don't Care, Click ```Yes```.
@@ -116,7 +116,57 @@ As you see down in Massages Section, it shows that our password is weak, just do
 
 ## Setting Up SQL Developer
 
+- First go to this path ```C:\app\db_home\network\admin``` and open ```tnsnames.ora``` file in notepad.
 
+    ![image](https://user-images.githubusercontent.com/110406908/222984667-242bc2d2-dbe2-4c3d-a581-8e5fb7097361.png)
+
+- Copy this selected part and paste it below it directly.
+
+    ![image](https://user-images.githubusercontent.com/110406908/222984758-5f0da643-008c-4346-a3d8-308921196057.png)
+
+- Edit ```ORCL``` words to ```ORCLPDB``` as following.
+    ![image](https://user-images.githubusercontent.com/110406908/222984913-95c5910a-71cc-432b-85f0-0366f475bab1.png)
+    #
+    ![image](https://user-images.githubusercontent.com/110406908/222984924-43256083-fce1-48fc-8f04-f1a3899ec07b.png)
+
+- Save the file with ```ctrl + s``` and close it.
+
+- Open Command Prompt (CMD), By searching for it, Or press Windows logo with R in the Keyboard and type ```cmd```, then click ```OK```.
+
+    ![image](https://user-images.githubusercontent.com/110406908/222983004-3c6afcfa-5070-42f3-98ef-185c8daab557.png)
+
+
+- Type ```sqlplus``` and hit ```Enter```.
+
+    ![image](https://user-images.githubusercontent.com/110406908/222983203-5e069db0-a458-40f5-8db3-09f66f41b908.png)
+
+- Type ```/ as sysdba``` in the user-name field and hit ```Enter```.
+
+    ![image](https://user-images.githubusercontent.com/110406908/222983572-c8397a8e-7fa0-40d0-b747-c854bc7412ac.png)
+
+- OR type ```sys as sysdba``` in the user-name field and hit ```Enter```, then type your password [```111``` in my case] and hit  ```Enter```.
+
+```
+    (: Don't Worry, The password don't appear while typing..
+```
+- Type ```alter session set container = orclpdb;``` to change the container database to 'orclpdb', and hit  ```Enter```.
+
+    ![image](https://user-images.githubusercontent.com/110406908/222983949-ab581493-1c0b-4506-9da9-ac0ed2c88030.png)
+
+
+- Type ```alter user hr identified by hr account unlock;``` to unlock the hr database user, and hit  ```Enter```.
+
+    ![image](https://user-images.githubusercontent.com/110406908/222984084-2245089a-002f-4894-9159-6e65f84bbd46.png)
+
+ - If you face any problem here type ```startup;``` and try again.
+
+
+- Type ```conn hr/hr@orclpdb;``` to Connect to the hr user that has hr password, and hit  ```Enter```.
+
+    ![image](https://user-images.githubusercontent.com/110406908/222984147-205ddf98-7134-44be-9f4b-efdfdecd6c13.png)
+
+
+    
 # Authors
 
 - [@SalmanIyad](https://www.github.com/SalmanIyad)
